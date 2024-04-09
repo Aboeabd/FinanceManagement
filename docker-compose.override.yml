@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  financemanagement.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+    ports:
+      - "80:80"
+    volumes:
+      - ~/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
